@@ -1,0 +1,4 @@
+xset -dpms && xset s noblank &
+xsetroot -solid "#000000" &
+
+(shortstack && /sbin/poweroff)&

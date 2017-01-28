@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Load g_serial driver and enable getty on it
+#echo -e "\n# Virtual USB serial gadget\nttyGS0\n\n" >>/etc/securetty
+#sed -i 's/After=rc-local.service/#After=rc-local.service/' /lib/systemd/system/serial-getty@.service
+#ln -s /lib/systemd/system/serial-getty@.service /etc/systemd/system/getty.target.wants/serial-getty@ttyGS0.service
+
+apt-get clean
+apt-get autoclean
+apt-get autoremove
+rm -rf /var/lib/apt/lists/*
+rm -rf /usr/lib/locale/*

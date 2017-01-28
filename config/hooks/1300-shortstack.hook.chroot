@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -ex
+
+pushd /root
+dpkg -i *.deb
+
+rm -rf *.deb
+
+apt-get update
+apt-get install -y libsdl2-mixer-dev
+
+pushd shortstack
+make
+mv shortstack /bin
+mv audio /bin
+
+popd
+
+rm -rf shortstack
+
+popd

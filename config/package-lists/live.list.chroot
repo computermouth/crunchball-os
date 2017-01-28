@@ -1,0 +1,51 @@
+#LB REQUIREMENTS
+#========================
+live-boot
+live-config
+live-config-systemd
+
+#HEADLESS REQUIREMENTS
+#========================
+network-manager
+fake-hwclock 
+sudo 
+flash-kernel 
+alsa-utils 
+binutils 
+openssl 
+ca-certificates 
+curl 
+initramfs-tools
+
+#HEADLESS CHIP SPECIFIC
+#========================
+rtl8723bs-mp-driver-common
+
+#GUI REQUIREMENTS
+#========================
+xserver-xorg-video-armsoc
+xserver-xorg-input-evdev
+xserver-xorg
+x11-xserver-utils
+openbox
+lightdm
+sed
+
+#GUI CHIP SPECIFIC
+#========================
+chip-mali-userspace
+chip-input-reset
+chip-mconfigs
+
+#DEV
+#========================
+gcc
+xterm
+nano
+make
+libconfuse
+
+#KERNEL VERSION DEPENDENT
+#========================
+rtl8723bs-mp-driver-modules-4.4.13-ntc-mlc
+chip-mali-modules-4.4.13-ntc-mlc
