@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ex
+set -x
 
 pushd /root
 dpkg -i *.deb
@@ -8,6 +8,7 @@ dpkg -i *.deb
 rm -rf *.deb
 
 apt-get update
+apt-get install -f -y
 apt-get install -y libsdl2-mixer-dev
 
 pushd shortstack

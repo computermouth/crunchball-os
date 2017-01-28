@@ -44,6 +44,15 @@ xterm
 nano
 make
 libconfuse-dev
+libasound2-dev
+libdbus-1-dev
+libpulse-dev
+libudev-dev
+libx11-dev
+libxcursor-dev
+libxext-dev
+libxi-dev
+libxkbcommon-dev
 
 #KERNEL VERSION DEPENDENT
 #========================
