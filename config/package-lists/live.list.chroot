@@ -43,7 +43,7 @@ gcc
 xterm
 nano
 make
-libconfuse
+libconfuse-dev
 
 #KERNEL VERSION DEPENDENT
 #========================
